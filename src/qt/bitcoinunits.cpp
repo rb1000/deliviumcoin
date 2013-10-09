@@ -34,7 +34,7 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("FOO");
+    case BTC: return QString("DEL");
     case mBTC: return QString("mFOO");
     case uBTC: return QString::fromUtf8("μFOO");
     default: return QString("???");
@@ -45,13 +45,13 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("FooCoin");
+    case BTC: return QString("deliviumcoin");
     case mBTC: return QString("milliFooCoin (1 / 1,000)");
     case uBTC: return QString("microFooCoin (1 / 1,000,000)");
     default: return QString("???");
     }
 }
-//a single unit (.00000001) of FooCoin is called a "wander."
+//a single unit (.00000001) of deliviumcoin is called a "wander."
 qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)

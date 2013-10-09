@@ -1,3 +1,3 @@
-FooCoin (FOO)
+deliviumcoin (DEL)
 
 Blah, blah, blah.

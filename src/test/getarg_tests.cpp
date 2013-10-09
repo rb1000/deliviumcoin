@@ -160,7 +160,7 @@ BOOST_AUTO_TEST_CASE(boolargno)
     ResetArgs("-foo --nofoo");
     BOOST_CHECK(GetBoolArg("-foo"));
 
-    ResetArgs("-nofoo -foo"); // foo always wins:
+    ResetArgs("-nofoo -foo"); // DEL always wins:
     BOOST_CHECK(GetBoolArg("-foo"));
 }
 
